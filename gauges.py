@@ -214,9 +214,7 @@ while True:
         # Each value will be a 12 or 16 bit signed integer value depending on the
         # ADC (ADS1015 = 12-bit, ADS1115 = 16-bit).
     # Print the ADC values.
-    print('| {0:>6} | {1:>6} | {2:>6} | {3:>6} |'.format(*values))
-    # Pause for half a second.
-    import max31856
+	import max31856
 	csPin = 8
 	misoPin = 9
 	mosiPin = 10
@@ -228,5 +226,7 @@ while True:
 	juncTempC = max.readJunctionTemp()
 	juncTempF = (juncTempC * 9.0/5.0) + 32
 	print "Cold Junction Temp: %f degF" % juncTempF
+	print('| {0:>6} | {1:>6} | {2:>6} | {3:>6} |'.format(*values))
+    # Pause for half a second.
 	GPIO.cleanup()
 	time.sleep(0.5)
