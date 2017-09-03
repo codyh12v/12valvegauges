@@ -197,7 +197,7 @@ import max31856
 #  -   8 = +/-0.512V
 #  -  16 = +/-0.256V
 # See table 3 in the ADS1015/ADS1115 datasheet for more info on gain.
-	max = max31856.max31856(csPin,misoPin,mosiPin,clkPin)
+max = max31856.max31856(csPin,misoPin,mosiPin,clkPin)
 
 
 GAIN = 1
