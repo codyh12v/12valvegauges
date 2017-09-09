@@ -1,13 +1,11 @@
 
-import time, math
-
-# Import the ADS1x15 module.
+import time
+import math
 import Adafruit_ADS1x15
 import RPi.GPIO as GPIO
 import max31856
 # Create an ADS1115 ADC (16-bit) instance.
 adc = Adafruit_ADS1x15.ADS1115()
-
 # Or create an ADS1015 ADC (12-bit) instance.
 #adc = Adafruit_ADS1x15.ADS1015()
 csPin = 8
@@ -28,10 +26,7 @@ clkPin = 11
 #  -  16 = +/-0.256V
 # See table 3 in the ADS1015/ADS1115 datasheet for more info on gain.
 max = max31856.max31856(csPin,misoPin,mosiPin,clkPin)
-
-
 GAIN = 1
-
 print('Reading ADS1x15 values, press Ctrl-C to quit...')
 # Print nice channel column headers.
 print('| {0:>6} | {1:>6} | {2:>6} | {3:>6} |'.format(*range(4)))
