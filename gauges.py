@@ -25,7 +25,7 @@ clkPin = 11
 #  -   8 = +/-0.512V
 #  -  16 = +/-0.256V
 # See table 3 in the ADS1015/ADS1115 datasheet for more info on gain.
-max = max31856.max31856(csPin,misoPin,mosiPin,clkPin)
+max1 = max.max31856(csPin,misoPin,mosiPin,clkPin)
 GAIN = 1
 print('Reading ADS1x15 values, press Ctrl-C to quit...')
 # Print nice channel column headers.
