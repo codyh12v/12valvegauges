@@ -3,7 +3,7 @@ import time
 import math
 import Adafruit_ADS1x15
 import RPi.GPIO as GPIO
-import max31856
+import max31856 as max
 # Create an ADS1115 ADC (16-bit) instance.
 adc = Adafruit_ADS1x15.ADS1115()
 # Or create an ADS1015 ADC (12-bit) instance.
